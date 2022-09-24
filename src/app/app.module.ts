@@ -25,7 +25,8 @@ import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -61,7 +62,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),
     AngularFirestoreModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatCardModule
 
   ],
   providers: [
